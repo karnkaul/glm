@@ -16,6 +16,8 @@ set(GLM_VERSION ${GLM_VERSION_MAJOR}.${GLM_VERSION_MINOR}.${GLM_VERSION_PATCH}.$
 project(glm VERSION ${GLM_VERSION} LANGUAGES CXX)
 message(STATUS "GLM: Version " ${GLM_VERSION})
 
+option(GLM_INSTALL ON)
+
 add_subdirectory(glm)
 add_library(glm::glm ALIAS glm)
 
